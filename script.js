@@ -25,7 +25,7 @@ function numberCubedMath(number) {
 function task2() {
     console.log("running task 2:");
     var num = parseInt(prompt("input number"), 10);
-    if (num == NaN) console.log("this is not a number");
+    if (Number.isNaN(num)) console.log("this is not a number");
     else console.log(`salary adjusted for taxes = ${numberTaxed(num)}`);
     console.log("task 2 over.");
 }
